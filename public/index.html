@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Socket/Chat</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/8042365e74.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <header class="header1">
+    <div class="titulo1">CHAT CON SOCKET.IO unu</div>
+  </header>
+
+
+
+
+
+
+
+
+  <div class="contenedor1">
+ 
+  </div>
+
+
+
+
+
+  <!--
+    <center>
+      <div class="MContainer">
+          <form action="post">
+              <div class="username">
+                <input type="text" class="usuario" id="usuario" placeholder="Usuario" required>
+              </div>
+              
+              <div class="password">
+                <input type="text" class="mensaje" id="mensaje" placeholder="Mensaje" required>
+              </div>
+              <button class="button" type="submit">
+                  <span>INGRESAR</span>
+              </button>
+
+          </form>
+      </div>
+
+  </center>
+ 
+
+    ///
+
+-->
+
+
+  <!--
+    <div class="contenedor2">
+      <h1 class="encabezado">Chat</h1>
+      <div class="contenedorChat" id="salida">
+        <div class="avisos" id="avisos">
+        </div>
+      </div>
+      <br>
+
+      <div class="username">
+        <input type="text" class="usuario" id="usuario" placeholder="Usuario" required>
+      </div>
+
+      <br>
+
+      <div class="password">
+        <input type="text" class="mensaje" id="mensaje" placeholder="Mensaje" required>
+    </div>
+
+    
+    <button class="button" class="botonEnvio" id="enviar" type="submit">
+      <span> Enviar </span>
+   </button>
+    </div>
+       
+  -->
+
+  <center>
+    <div class="MContainer">
+      <h1 class="encabezado">Chat</h1>
+      <br>
+
+      <div class="formi">
+
+        <div class="username">
+          <input type="text" class="usuario" id="usuario" placeholder="Usuario" required>
+        </div>
+
+        <div class="password">
+          <input type="text" class="mensaje" id="mensaje" placeholder="Mensaje">
+        </div>
+
+        <button class="botonEnvio" id="enviar" type="submit">
+          <span> Enviar </span>
+        </button>
+
+      </div>
+
+      <br><br><br><br>
+      <br><br><br><br><br>
+
+      <div class="contenedorChat" id="salida">
+        <!---<H1>AQUÍ ESTÁ LA SALIDA</H1>-->
+        <div class="avisos" id="avisos">
+          <!--<h3>aquí están los avisos</h3>-->
+        </div>
+      </div>
+
+      <br><br><br>
+
+    </div>
+
+  </center>
+
+
+
+
+  <!--*********************************************************-->
+
+  <input type="checkbox" id="btn-modal">
+  <label for="btn-modal" class="lbl-modal"><i class="fa-solid fa-arrow-down" id="cajita"> 
+          <p id="vend">MOSTRAR USUARIOS</p>
+      </i></label>
+
+
+
+  <div class="modal">
+      <div class="contenedor">
+          <header>CHAT UWU</header>
+          <label for="btn-modal">X</label>
+          <div class="contenido">
+              <h3> USUARIOS CONECTADOS:</h3>
+
+              <div id="notificaciones" class="notificaciones">
+              </div>
+              
+          </div>
+      </div>
+  </div>
+    <!--*********************************************************-->
+
+
+
+
+  <div class="burbujas">
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+  </div>
+
+
+
+
+
+
+  <script src="js/socket.io.js"></script>
+  <script src="js/logica.js" charset="utf-8"></script>
+</body>
+
+</html>
